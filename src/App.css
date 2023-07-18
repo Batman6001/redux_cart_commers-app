@@ -1,7 +1,4 @@
-.App {
-  text-align: center;
-}
-
+/* 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -34,5 +31,24 @@
   }
   to {
     transform: rotate(360deg);
+  }
+} */
+.link a {
+  color: black;
+}
+.but button:hover {
+background-color: white;
+color: black;
+}
+.main .main-form{
+  width: 30%;
+  display:inline-block;
+}
+
+
+@media only screen and (max-width: 600px) {
+ .main .main-form{
+    width: 90%;
+    display:inline-block;
   }
 }
