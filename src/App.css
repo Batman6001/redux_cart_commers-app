@@ -53,6 +53,66 @@ background-color: white;
 color: black;
 }
 
+
+.slides{
+  display: flex;
+  height: 130px;
+  border: 1px solid black;
+}
+.linespace{
+  line-height: 35px;
+}
+.three-shoes{
+  display: flex;
+  justify-content: space-between;
+}
+.first img{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.pic{
+  font-size: 12px;
+  text-align: center;
+}
+.four-btn{
+  display: flex;
+}
+.four-btn button {
+  border-radius: 10px;
+  padding: 12px;
+  margin-left: 8px;
+}
+.four-btn button:hover {
+  background-color: black;
+  color: whitesmoke;
+}
+.btn1 button{
+  background-color: rgb(255, 213, 0);
+  border: none;
+  width: 100%;
+  padding: 8px;
+}
+.btn1 button:hover{
+  background-color:white;
+  border: 1px solid black;
+ 
+}
+.btn2 button{
+  background-color:black;
+  color: whitesmoke;
+  border: none;
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+}
+.slider{
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
 @media only screen and (max-width: 600px) {
  .main .main-form{
     width: 90%;

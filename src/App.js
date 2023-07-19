@@ -4,18 +4,21 @@ import Login from './login'
 import Create from './create'
 import {BrowserRouter,Routes,Route} from "react-router-dom"
 import Signup from './Signup'
+import BuyNow from './buyNow'
 
 
 function App() {
   return (
     <div className='App'>
     {/* <Signup/> */}
-    <BrowserRouter>
+    {/* <BrowserRouter>
     <Routes>
     <Route path='/' element={<Login/>}/>
     <Route path='/create' element={<Create/>}/>
       </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
+
+  <BuyNow/>
     </div>
   )
 }
