@@ -44,7 +44,14 @@ color: black;
   width: 30%;
   display:inline-block;
 }
-
+.logout button{
+  background-color: black;
+color:  white;
+}
+.logout button:hover{
+background-color: white;
+color: black;
+}
 
 @media only screen and (max-width: 600px) {
  .main .main-form{
