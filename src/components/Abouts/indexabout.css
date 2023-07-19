@@ -126,7 +126,50 @@ h2 {
 		text-align: center;
 		margin-top: 90px;
 		margin-bottom: 70px;
+		width: auto;
 	}
 	.a_page{
 		color: black;
 	}
+	.error-page h1 {
+		margin-bottom: 15px;
+	}
+	.error-page p {
+		margin-bottom: 20px;
+	}
+
+	/* Blog__________________________________________________ */
+
+.cart-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cart-item {
+  width: 30%; /* Set the width for three cart items in a row */
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.cart-item img {
+	/* overflow: hidd; */
+	width: 100%;	
+}
+.cart-item-content1 {
+	font-size:1.3rem;
+}
+.cart-item-content2 {
+	font-size:.8rem;
+}
+.cart-item-content3 {
+	font-size:.9rem;
+}
+/* Media query for smaller screens (mobile) */
+@media (max-width: 767px) {
+  .cart-item {
+    width: 100%; /* Set the width to 100% to stack items on smaller screens */
+  }
+}
