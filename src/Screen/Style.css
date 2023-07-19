@@ -47,7 +47,7 @@ justify-content:space-between;
 
 .sldiercontent-home{
     background-color: black;
-    width:45.5%;
+    width:42.2%;
     height: auto;
     text-align: center;
     display: flex;
@@ -366,6 +366,7 @@ margin-top: 4%;
     
     position: relative;
     margin-right: 15px;
+
     /* width: 100%; */
     /* height: 100%; */
 }
@@ -396,4 +397,52 @@ margin-top: 4%;
     line-height:6vh;   
     /* align-items: center; */
     align-content: center;
+}
+
+.customer-con{
+    padding-bottom: 3.5%;
+    display: flex;
+    background-color: #f5f3f3;
+    flex-direction: column;
+}
+.sub-customer-con{
+    display: flex;
+    justify-content: space-evenly;
+}
+.customer-text{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.customer-con h2{
+    /* margin: 40% 0%; */
+    /* margin-bottom:3% ; */
+    margin:3.5%  0% ;
+}
+.video-section{
+    display: flex;
+    justify-content: space-evenly;
+    /* width: 100%; */
+    margin:6% 0%;
+    background-color: #f5f3f3;
+
+    /* background-color: #c92400; */
+}
+.myClassname{
+    /* width:100%; */
+}
+.iframe{
+    margin: 3.5% 0%;
+/* width:fit-content; */
+}
+.logo{
+    margin: 4.8% 0%;
+    display: flex;
+    flex-direction: column;
+}
+.logo-con1{
+    display: flex;
+    justify-content: space-evenly;
 }

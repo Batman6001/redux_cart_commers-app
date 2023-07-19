@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../Style.css"
+import Iframe from 'react-iframe'
 import Header from "../Header";
 
 
@@ -58,10 +59,10 @@ const hover2 =()=>{
     </div>
 
     <div className="home-image" >
-        <div><img  width={800}  src="https://www.flatheads.in/cdn/shop/files/flatheads-not-out-edition-banner-2.jpg?v=1673833570" /></div>
+        <div><img  width={680}  src="https://www.flatheads.in/cdn/shop/files/flatheads-not-out-edition-banner-2.jpg?v=1673833570" /></div>
         <div className="sldiercontent-home">
-            <h1 className="slide-text">we are back in stock </h1>
-            <h3 className="slide-text">160 shoes Limites release</h3>
+            <h1 className="slide-text">We're back in stock! </h1>
+            <h3 className="slide-text">160 shoes.Limites release.</h3>
             <h1></h1> 
             <a><span  className="slide-text shop-btn" >SHOP NOW</span></a>
         </div>
@@ -263,6 +264,63 @@ const hover2 =()=>{
 
    </div>
   
+   
+   <div className="customer-con" >
+    <h2>CUSTOMER REVIEWS</h2>
+
+    <div className="sub-customer-con" > 
+    <div  >
+        <div><img width={100}  src="https://cdn.shopify.com/s/files/1/0258/2485/4100/files/strasall.png?v=1654675122" /></div>
+        <p className="customer-text" >My feet have stopped complaining.</p>
+        <div><span>- Pranav Gadgil<br/>Founder, Baeyork</span></div>
+
+    </div>
+    <div>
+        <div><img width={100}  src="https://cdn.shopify.com/s/files/1/0258/2485/4100/files/strasall.png?v=1654675122" /></div>
+        <p className="customer-text" >My feet have stopped complaining.</p>
+        <div><span>- Pranav Gadgil<br/>Founder, Baeyork</span></div>
+
+    </div>
+    <div>
+        <div><img width={100}  src="https://cdn.shopify.com/s/files/1/0258/2485/4100/files/strasall.png?v=1654675122" /></div>
+        <p className="customer-text"  >My feet have stopped complaining.</p>
+        <div><span>- Pranav Gadgil<br/>Founder, Baeyork</span></div>
+
+      </div>
+       </div>
+   </div>
+
+   <div className="video-section" >
+   <div className="iframe" >
+   <Iframe url="https://cdn.shopify.com/s/files/1/0258/2485/4100/files/Adjustment_Layer.mp4?v=1655056559"
+        width="319px"
+        height="320px"
+        id=""
+        className=""
+        display="block"
+        position="relative"/>
+   </div>
+
+   <div className="logo" >
+
+    <h2>FEATURED ON</h2>
+    <div className="logo-con1" >
+        <div> <img width={130} src="https://www.flatheads.in/cdn/shop/files/mintlogo.png?v=1655050026" /> </div>
+        <div> <img width={100} src="https://www.flatheads.in/cdn/shop/files/yourstorylogo.png?v=1655050026" /> </div>
+        <div> <img width={90} src="https://www.flatheads.in/cdn/shop/files/lbblogo.png?v=1655050026" /> </div>
+         
+    </div>
+    <div  className="logo-con1"  >
+    <div> <img width={100} src="https://www.flatheads.in/cdn/shop/files/cnbclogo.png?v=1655050026" /> </div>
+    <div> <img width={100} src="https://www.flatheads.in/cdn/shop/files/theindianexlogo.png?v=1655050026" /> </div>
+
+    </div>
+   
+   </div>
+
+
+   </div>
+
 
 </div>
   );
