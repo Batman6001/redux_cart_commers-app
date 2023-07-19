@@ -59,7 +59,7 @@ const hover2 =()=>{
     </div>
 
     <div className="home-image" >
-        <div><img  width={680}  src="https://www.flatheads.in/cdn/shop/files/flatheads-not-out-edition-banner-2.jpg?v=1673833570" /></div>
+        <div><img  width={805}  src="https://www.flatheads.in/cdn/shop/files/flatheads-not-out-edition-banner-2.jpg?v=1673833570" /></div>
         <div className="sldiercontent-home">
             <h1 className="slide-text">We're back in stock! </h1>
             <h3 className="slide-text">160 shoes.Limites release.</h3>
@@ -94,23 +94,23 @@ const hover2 =()=>{
             
            <b> <p>{api?.products[0].name}</p></b>
             <p className="price" >Rs.{api?.products[0].final_price}</p>
-            <p>Colour -  {api?.products[0].color}</p>
-            <p>Size - {api?.products[0].sizes.map(item=>item)}</p>
+            {/* <p>Colour -  {api?.products[0].color}</p> */}
+            {/* <p>Size - {api?.products[0].sizes.map(item=>item)}</p> */}
 
         </div>
         <div onMouseLeave={()=>setShow1(false)} onMouseEnter={hover1}>
         {!show1?<img src={api?.products[1].images[2]} />:<img src={hoverData1} />}
            <b> <p>{api?.products[6].name}</p></b>
             <p className="price" >Rs {api?.products[1].final_price}</p>
-            <p>Colour {api?.products[1].color}</p>
-            <p>{api?.products[1].sizes.map(item=>item)}</p>
+            {/* <p>Colour {api?.products[1].color}</p> */}
+            {/* <p>{api?.products[1].sizes.map(item=>item)}</p> */}
         </div>
         <div onMouseLeave={()=>setShow2(false)} onMouseEnter={hover2}>
         {!show2?<img src={api?.products[3].images[3]} />:<img src={hoverData2}/>}
            <b> <p>{api?.products[15].name}</p></b>
             <p className="price" >Rs {api?.products[3].final_price}</p>
-            <p>Colour {api?.products[3].color}</p>
-            <p>{api?.products[3].sizes.map(item=>item)}</p>
+            {/* <p>Colour {api?.products[3].color}</p> */}
+            {/* <p>{api?.products[3].sizes.map(item=>item)}</p> */}
         </div>
 
     </div>
