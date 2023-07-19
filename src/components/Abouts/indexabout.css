@@ -71,9 +71,6 @@ h2 {
     }
     .product-thumbnail {
         display: flex;
-
-        /* margin-left: 3%; */
-        /* margin-right: 3%; */
         margin: 2% 5%;
         justify-content:space-evenly;
     }
@@ -81,12 +78,55 @@ h2 {
         height: 35%;
         width: 35%;
         align-items:center ;
-        /* padding: 40px; */
-        /* background-color: rgb(251, 252, 252); */
     }
     .placeholder_with svg{
          height: 95%;
         width: 95%;
-        /* color: aquamarine; */
         background-color: rgb(237, 238, 238);
     }
+	
+
+/* OurStory____________________________________________________ */
+
+	.itemsour {
+		max-width: 100%;
+	}
+	
+	.itemss {
+		box-sizing: border-box;
+		padding: 30px;
+		width: 100%;
+	}
+	.itemss img {
+		width: 51%;
+		display: inline-block;
+		padding: 5px;
+		margin-bottom: 5px;
+	}
+
+	.itemss .text-block {
+		width: 49%;
+		display: inline-block;
+		padding: 5px;
+}
+	@media only screen and (max-width: 768px) {
+		.itemss img {
+			display: block;
+			width: 100%;
+		}
+
+		.itemss .text-block {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	/* Customer Reviews______________________ */
+	.error-page{
+		text-align: center;
+		margin-top: 90px;
+		margin-bottom: 70px;
+	}
+	.a_page{
+		color: black;
+	}
