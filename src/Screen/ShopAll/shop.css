@@ -1,0 +1,67 @@
+.home-C-S{
+    display: flex;
+    justify-content: left;
+    margin: 3%  6.2%;
+}
+.sub-h-c-s{
+    display: flex;
+    flex-direction: row;
+}
+.shop{
+    /* font-weight: lighter; */
+    opacity: 0.4;
+}
+.shopAll-heading{
+    display: flex;
+    justify-content: left;
+    margin: 3%  6.2%;
+    font-weight: 100;
+
+}
+.shopAll-heading h2{
+    /* font-size: larger; */
+    font-weight: 400;
+
+}
+.filter-section{
+    display: flex;
+    justify-content: right;
+    margin : 0% 5% ;
+}
+.sub-size{
+    font-weight:700;
+
+    display: flex;
+    justify-content: space-between;
+}
+.all-size{
+    width: 19%;
+    margin: 0% 4%;
+    line-height: 9.5vh;
+    /* padding: 1% 2%; */
+}
+.sub-size p{
+    opacity: 0.4;
+    font-size: 22px;
+}
+.sub-h-c-s p{
+    font-size: smaller;
+}
+.filter-sub-sec{
+    display: flex;
+    justify-content:space-around;
+}
+.filter-section{
+    /* padding-top: 5%; */
+    margin: 1% 5%;
+    /* margin-bottom: 2%; */
+}
+.price-section{
+    display: flex;
+    justify-content: center;
+}
+.final-price{
+    opacity: 0.4;
+    text-decoration: line-through;
+}
+   
