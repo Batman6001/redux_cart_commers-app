@@ -5,6 +5,10 @@ function header() {
   return (
     <div className='header-con'>
          
+    <div className="top-nav" >
+    <p>AS SEEN ON SHARK TANK 🥳
+    </p>
+    </div>
       <div className="header" >
         <div><img width={165}  src="https://www.flatheads.in/cdn/shop/files/flatheads-logo-new-hotizontal_180x_2x_bf74c8db-79f1-4904-b343-3b0e2681ec07_224x32.png?v=1647508945" /></div>
         <div>Shop All</div>
