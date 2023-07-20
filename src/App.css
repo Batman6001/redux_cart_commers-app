@@ -1,38 +1,3 @@
-/* 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
 .link a {
   color: black;
 }
@@ -54,64 +19,6 @@ color: black;
 }
 
 
-.slides{
-  display: flex;
-  height: 130px;
-  border: 1px solid black;
-}
-.linespace{
-  line-height: 35px;
-}
-.three-shoes{
-  display: flex;
-  justify-content: space-between;
-}
-.first img{
-  height: 80px;
-  width: 80px;
-  border-radius: 50%;
-  border: 2px solid black;
-}
-.pic{
-  font-size: 12px;
-  text-align: center;
-}
-.four-btn{
-  display: flex;
-}
-.four-btn button {
-  border-radius: 10px;
-  padding: 12px;
-  margin-left: 8px;
-}
-.four-btn button:hover {
-  background-color: black;
-  color: whitesmoke;
-}
-.btn1 button{
-  background-color: rgb(255, 213, 0);
-  border: none;
-  width: 100%;
-  padding: 8px;
-}
-.btn1 button:hover{
-  background-color:white;
-  border: 1px solid black;
- 
-}
-.btn2 button{
-  background-color:black;
-  color: whitesmoke;
-  border: none;
-  width: 100%;
-  padding: 8px;
-  margin-top: 10px;
-}
-.slider{
-  background-color: black;
-  color: white;
-  width: 100%;
-}
 
 @media only screen and (max-width: 600px) {
  .main .main-form{

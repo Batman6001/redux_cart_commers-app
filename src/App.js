@@ -5,7 +5,7 @@ import Create from './create'
 import {BrowserRouter,Routes,Route} from "react-router-dom"
 import Signup from './Signup'
 import BuyNow from './buyNow'
-
+import "./buyNowcss/style.css"
 
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
       </BrowserRouter> */}
 
   <BuyNow/>
+  
     </div>
   )
 }
