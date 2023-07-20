@@ -30,7 +30,7 @@ function App() {
       {/* <CustomarReviews /> */}
       {/* <OurStory /> */}
       {/* <Whyflatheads /> */}
-      <Footer />
+      {/* <Footer /> */}
       {/* <Footers /> */}
       {/* <HomePage/> */}
 
