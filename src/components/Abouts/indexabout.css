@@ -1,3 +1,5 @@
+
+/* ________________________WhyFlatheads_____________________ */
 .section__main{
     text-align: center;
 }
@@ -67,32 +69,52 @@ h2 {
 		}
 	}
     .section__heading2{
-        margin: 0% 5%;
+        margin: 3% 5%;
     }
-    .product-thumbnail {
-        display: flex;
-        margin: 2% 5%;
-        justify-content:space-evenly;
+
+.container {
+    display: flex;	
+    flex-wrap: wrap;
+	margin: 0% 5%;
+    justify-content: space-between;
+}
+
+.card {
+    width: calc(33.39% - 20px); /* Three cards in a row for large screens */
+	border:none;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+.card svg {
+background-color: #f0f0f0;
+opacity: 0.5;
+border: none;
+}
+.card p{
+	margin-top: 1.5%;
+	padding-left: 1%;
+}
+.card span {
+	padding-left: 1%;
+}
+/* For medium screens, show two cards in a row */
+@media screen and (max-width: 600px) {
+    .card {
+        width: calc(50% - 10px);
     }
-    .placeholder_with{
-        height: 35%;
-        width: 35%;
-        align-items:center ;
-    }
-    .placeholder_with svg{
-         height: 95%;
-        width: 95%;
-        background-color: rgb(237, 238, 238);
-    }
-	
+}
+
 
 /* OurStory____________________________________________________ */
 
 	.itemsour {
 		max-width: 100%;
+		/* display: flex; */
+		margin: 0% 3%;
 	}
 	
 	.itemss {
+		display: flex;
 		box-sizing: border-box;
 		padding: 30px;
 		width: 100%;
@@ -107,9 +129,13 @@ h2 {
 	.itemss .text-block {
 		width: 49%;
 		display: inline-block;
-		padding: 5px;
+		padding: 12% 0%;
+		/* justify-content: center; */
 }
 	@media only screen and (max-width: 768px) {
+		.itemss{
+			flex-direction: column!important;
+		}
 		.itemss img {
 			display: block;
 			width: 100%;
@@ -181,3 +207,7 @@ h2 {
     width: 100%; /* Set the width to 100% to stack items on smaller screens */
   }
 }
+
+/* -----------------------Chack----------------------------- */
+
+

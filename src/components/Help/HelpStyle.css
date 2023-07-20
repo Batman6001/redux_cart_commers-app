@@ -1,0 +1,42 @@
+/* ___________________FAQ___________________ */
+
+.content-cenrer {
+    text-align: center;
+    padding: 50px;
+    font-size: 80%;    
+}
+.main-div {
+    margin: 0% 5%;
+}
+
+.forallcontent {
+  /* Add your styles for the container if needed */
+}
+
+.accordion {
+  margin-bottom: 10px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+    font-size: 23px;
+    font-weight: 800;
+  display: block;
+  /* background-color: #f0f0f0; */
+  /* padding: 10px; */
+  cursor: pointer;
+}
+
+article {
+  display: none;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+/* Show the article when the radio input is checked */
+input[type="radio"]:checked + label + article {
+  display: block;
+}

@@ -100,8 +100,9 @@ const Blog = () => {
                         <u> <h6>CONTINUE READING</h6></u>
                     </div>
                 </div >
+                
             </div>
-
+            
 
             {/* <div className="blog_main">
                 <p>Home > <span>Flatheads Blog</span></p>
