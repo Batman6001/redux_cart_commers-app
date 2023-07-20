@@ -303,16 +303,16 @@ const hover2 =()=>{
 
    <div className="logo" >
 
-    <h2>FEATURED ON</h2>
+    <h1>FEATURED ON</h1>
     <div className="logo-con1" >
         <div> <img width={130} src="https://www.flatheads.in/cdn/shop/files/mintlogo.png?v=1655050026" /> </div>
-        <div> <img width={100} src="https://www.flatheads.in/cdn/shop/files/yourstorylogo.png?v=1655050026" /> </div>
-        <div> <img width={90} src="https://www.flatheads.in/cdn/shop/files/lbblogo.png?v=1655050026" /> </div>
+        <div> <img width={130} src="https://www.flatheads.in/cdn/shop/files/yourstorylogo.png?v=1655050026" /> </div>
+        <div> <img width={120} src="https://www.flatheads.in/cdn/shop/files/lbblogo.png?v=1655050026" /> </div>
          
     </div>
     <div  className="logo-con1"  >
-    <div> <img width={100} src="https://www.flatheads.in/cdn/shop/files/cnbclogo.png?v=1655050026" /> </div>
-    <div> <img width={100} src="https://www.flatheads.in/cdn/shop/files/theindianexlogo.png?v=1655050026" /> </div>
+    <div> <img width={120} src="https://www.flatheads.in/cdn/shop/files/cnbclogo.png?v=1655050026" /> </div>
+    <div> <img width={120} src="https://www.flatheads.in/cdn/shop/files/theindianexlogo.png?v=1655050026" /> </div>
 
     </div>
    
