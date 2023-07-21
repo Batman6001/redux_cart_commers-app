@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "../Style.css"
 
 function header() {
+
+
   return (
     <div className='header-con'>
          
@@ -10,7 +12,7 @@ function header() {
     </p>
     </div>
       <div className="header" >
-        <div><img width={165}  src="https://www.flatheads.in/cdn/shop/files/flatheads-logo-new-hotizontal_180x_2x_bf74c8db-79f1-4904-b343-3b0e2681ec07_224x32.png?v=1647508945" /></div>
+        <div><img npm i react-router-dom /></div>
         <div>Shop All</div>
         <div>Not out Edition</div>
         <div>Shoes</div>
