@@ -9,11 +9,14 @@ function ShopAll() {
     const [api ,setAPi] = useState()  
     const [hoverData,setHoverData]  = useState()
     const [hoverData1,setHoverData1]  = useState()
-    const [hoverData2,setHoverData2]  = useState()
-   
+    const [hoverData2,setHoverData2]  = useState()   
     const [show,setShow] = useState()
     const [show1,setShow1] = useState()
     const [show2,setShow2] = useState()
+    const [showSize,setShowSize] = useState(false)
+    const [showPrice,setShowPrice] = useState(false)
+    const [showCollection,setShowCollection]  = useState(false)
+    const [showAvl,setShowAvl] = useState(false)
  
  
     useEffect(()=>{
@@ -47,9 +50,6 @@ function ShopAll() {
      }
  
   
-
-
-
 
   return (
     <>
@@ -85,26 +85,71 @@ function ShopAll() {
         <div className="filter-sub-sec" >
        <div className="all-size" >
         <div className="sub-size" >Size
-        <p>+</p>
+        {!showSize?<p className="puls" onClick={()=>setShowSize(true)} >+</p>:<p className="puls" onClick={()=>setShowSize(false)} >−</p>}
         </div>
+        {showSize?<div className="size-number" >
+        <div className="input-div" ><input type="checkbox" />&#160;&#160;6</div>
+        <div className="input-div" ><input type="checkbox" />&#160;&#160;7</div>
+        <div className="input-div" ><input type="checkbox" />&#160;&#160;8</div>
+        <div className="input-div" ><input type="checkbox" />&#160;&#160;9</div>
+        <div className="input-div" ><input type="checkbox" />&#160;&#160;10</div>
+        <div className="input-div" ><input type="checkbox" />&#160;&#160;11</div>
+        <div className="input-div" ><input type="checkbox" />&#160;&#160;12</div>
+
+        </div>:''}
         <hr/>
-        <div className="sub-size" >Price
-        <p>+</p>
+        <div className="sub-size" >Price<br/>
+        
+        {!showPrice?<p className="puls" onClick={()=>setShowPrice(true)} >+</p>:<p className="puls" onClick={()=>setShowPrice(false)} >−</p>}
         </div>
+        {showPrice?<div className="price-field">
+           <div className="input-price-div" >
+            From
+            <input className="price-input" placeholder="999"/>
+           </div>
+           <div className="input-price-div">
+            To
+            <input  placeholder="999" className="price-input" />
+           </div> 
+        </div>:""}
+
         <hr/>
         <div className="sub-size" >Collection
-        <p>+</p>
+        {!showCollection?<p className="puls" onClick={()=>setShowCollection(true)} >+</p>:<p className="puls" onClick={()=>setShowCollection(false)} >−</p>}
+
         </div>
+        {showCollection?<div className="collection-div" >
+        <div className="collection-field" > <input type="checkbox" />&#160;&#160;<p>Ellipsis - Breathable Sneakers</p> </div>
+        <div className="collection-field" > <input type="checkbox" />&#160;&#160; <p>Luft - Ultralight Sneakers</p></div>
+        </div>:""}
         <hr/>
         <div  className="sub-size" >Availability
-        <p>+</p>
+        {!showAvl?<p className="puls" onClick={()=>setShowAvl(true)} >+</p>:<p className="puls" onClick={()=>setShowAvl(false)} >−</p>}
+
         </div>
+        {showAvl?<div className="collection-div" >
+        <div className="collection-field" > <input type="checkbox" />&#160;&#160;<p className="in-stock" >In stock</p> </div>
+        <div className="collection-field" > <input type="checkbox" />&#160;&#160; <p className="out-stock" >Out of stock</p></div>
+        </div>:""}
         <hr/>
 
        </div>
 
+       {/* <div className="clear-con" >
+            <lu className="ul-con" >
+                <li>
+                  6x 
+                </li>
+                <li>
+                 clear all
+                </li>
+            </lu>
+        </div> */}
+    
+        {/* <div className="clear-all" ><p>6&#160;X</p> </div><div>Clear all</div>  */}
+    <div className="all-section-con" >  
        <div onMouseEnter={hover} onMouseLeave={()=>setShow(false)} >
-        {!show?<img width={250}  src="https://www.flatheads.in/cdn/shop/products/Burgundy7_1000x1000.jpg?v=1644229836" />:<img width={250}   src={hoverData} />}
+        {!show?<img width={250}  src={api?.products[0].images[0]} />:<img width={250}   src={hoverData} />}
         <h3>{api?.products[0].name}</h3>
         <div className="price-section" >
         <p style={{color:"#c92400"}} >Rs.{api?.products[0].final_price} </p>&nbsp;<p className="final-price" >Rs{api?.products[0].original_price}</p>
@@ -124,6 +169,7 @@ function ShopAll() {
         <p style={{color:"#c92400"}} >Rs.{api?.products[18].final_price} </p>&nbsp;<p className="final-price" >Rs{api?.products[18].original_price}</p>
         </div>
        </div>
+       </div> 
 
         </div>
 
