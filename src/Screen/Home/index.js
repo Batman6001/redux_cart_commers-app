@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../Style.css"
 import Iframe from 'react-iframe'
-import Header from "../Header";
+import Header from "../Header/humburgerMenu/menu";
 
 
 function HomePage() {
@@ -50,13 +50,9 @@ const hover2 =()=>{
 
   return (
     <div className="container" >
-    <div className="top-nav" >
-    <p>AS SEEN ON SHARK TANK 🥳
-    </p>
-    </div>
-    <div  className="header-con" >
+    {/* <div > */}
         <Header/>
-    </div>
+    {/* </div> */}
 
     <div className="home-image" >
         <div><img  width={805}  src="https://www.flatheads.in/cdn/shop/files/flatheads-not-out-edition-banner-2.jpg?v=1673833570" /></div>

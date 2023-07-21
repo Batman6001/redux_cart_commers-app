@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./shop.css";
 
 import "../Style.css";
-import Header from "../Header/index";
+import Header from "../Header/humburgerMenu/menu";
 
 function ShopAll() {
 
@@ -12,12 +12,12 @@ function ShopAll() {
     const [hoverData2,setHoverData2]  = useState()   
     const [show,setShow] = useState()
     const [show1,setShow1] = useState()
-    const [show2,setShow2] = useState()
+    const [show2,setShow2] = useState(false)
     const [showSize,setShowSize] = useState(false)
     const [showPrice,setShowPrice] = useState(false)
     const [showCollection,setShowCollection]  = useState(false)
     const [showAvl,setShowAvl] = useState(false)
- 
+    const [filterSize,setFilterSize] = useState() 
  
     useEffect(()=>{
      
@@ -39,17 +39,26 @@ function ShopAll() {
  }
  
  const hover1 =()=>{
-     setHoverData1(api?.products[1].images[1])
+     setHoverData1(api?.products[15].images[2])
      setShow1(true)
      }
  
      
  const hover2 =()=>{
-     setHoverData2(api?.products[3].images[1])
+     setHoverData2(api?.products[11].images[3])
      setShow2(true)
      }
  
   
+
+  const sizeFilter=()=>{
+    setFilterSize(api?.products?.map((item)=>item.sizes).map((item)=>item))
+    // alert(filterSize)
+    console.log("filter size",filterSize);
+  }
+
+
+
 
   return (
     <>
@@ -88,7 +97,7 @@ function ShopAll() {
         {!showSize?<p className="puls" onClick={()=>setShowSize(true)} >+</p>:<p className="puls" onClick={()=>setShowSize(false)} >−</p>}
         </div>
         {showSize?<div className="size-number" >
-        <div className="input-div" ><input type="checkbox" />&#160;&#160;6</div>
+        <div className="input-div"  ><input onClick={()=>sizeFilter()}  type="checkbox" />&#160;&#160;6</div>
         <div className="input-div" ><input type="checkbox" />&#160;&#160;7</div>
         <div className="input-div" ><input type="checkbox" />&#160;&#160;8</div>
         <div className="input-div" ><input type="checkbox" />&#160;&#160;9</div>
@@ -155,15 +164,15 @@ function ShopAll() {
         <p style={{color:"#c92400"}} >Rs.{api?.products[0].final_price} </p>&nbsp;<p className="final-price" >Rs{api?.products[0].original_price}</p>
         </div>
        </div>
-       <div>
-        <img width={250}  src="https://www.flatheads.in/cdn/shop/products/Burgundy7_1000x1000.jpg?v=1644229836" />
+       <div onMouseEnter={hover1} onMouseLeave={()=>setHoverData1(false)} >
+        {!hoverData1?<img width={250}  src={api?.products[15].images[3]} />:<img  width={250} src={hoverData1} />}
         <h3>{api?.products[6].name}</h3>
         <div className="price-section" >
         <p style={{color:"#c92400"}} >Rs.{api?.products[6].final_price} </p>&nbsp;<p className="final-price" >Rs{api?.products[6].original_price}</p>
         </div>
        </div>
-       <div>
-        <img width={250}  src="https://www.flatheads.in/cdn/shop/products/Burgundy7_1000x1000.jpg?v=1644229836" />
+       <div onMouseEnter={hover2}  onMouseLeave={()=>setHoverData2(false)} >
+        {!hoverData2?<img width={250}  src={api?.products[11].images[1]} />:<img width={250} src={hoverData2} />}
         <h3>{api?.products[18].name}</h3>
         <div className="price-section" >
         <p style={{color:"#c92400"}} >Rs.{api?.products[18].final_price} </p>&nbsp;<p className="final-price" >Rs{api?.products[18].original_price}</p>
