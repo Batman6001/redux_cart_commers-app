@@ -1,13 +1,15 @@
 import React from 'react'
-import TrackMyOrder from './components/Help/TrackMyOrder'
-import Faq from './components/Help/Faq'
-
+import TrackMyOrder from './components/Help/TrackMyOrders/TrackMyOrder'
+// import Faq from './components/Help/Faq'
+// import Header from './Screen/Header/index'
 
 function App() {
   return (
     <div className='App'>
-       {/* <TrackMyOrder /> */}
-       <Faq />
+       <TrackMyOrder />
+
+       {/* <Header /> */}
+       {/* <Faq /> */}
     </div>
   )
 }

@@ -2,15 +2,16 @@
 
 .content-cenrer {
     text-align: center;
-    padding: 50px;
+    /* padding-bottom: 0%; */
+    margin-top: 8%;
     font-size: 80%;    
 }
 .main-div {
     margin: 0% 5%;
 }
 
-.forallcontent {
-  /* Add your styles for the container if needed */
+.forallcontent ul li a {
+  color: black;
 }
 
 .accordion {
@@ -22,9 +23,10 @@ input[type="radio"] {
 }
 
 label {
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 800;
   display: block;
+  opacity: 0.7;
   /* background-color: #f0f0f0; */
   /* padding: 10px; */
   cursor: pointer;
@@ -40,3 +42,128 @@ article {
 input[type="radio"]:checked + label + article {
   display: block;
 }
+.title {
+  text-align: center;
+  font-size: 30px;
+  margin: 5%;
+  opacity: 0.8;
+}
+
+
+/* ######################__________TrackMyOrder____________######################### */
+.company-logo{
+  width: 12%;
+  padding: 1.4% 2.4%;
+}
+.tracking-header {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* -----------------------------------Main------------------- */
+
+.tracking-main-content {
+  background-image: url('https://wareiq-assets.s3.amazonaws.com/tracking-bg-5.png');
+  padding: 4% 0%;
+}
+
+ .tracking-container {
+  margin: 0% 12%;
+  border: 1px solid black;
+}
+.page-title{
+  margin-top: 0%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+.order-search-container{
+  border: 1px solid black;
+  padding: 4% 5%;
+   background: #F8F8F8;
+  border-radius: 12px;
+}
+/* .search-by-label{
+  font-size: 14px;
+  color: #000000;
+  line-height: 16px;
+} */
+.track-radio-btns-container {
+  display: flex;
+}
+.track-radio-btn{
+  margin: 15px 30px 25px 0;
+  /* font-size: 52%; */
+  line-height: 14px;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+/* .track-radio-btn input[type=radio] {
+  height: 18%;
+  width: 18px;
+  margin-right: 10px;
+  cursor: pointer;
+} */
+.track-form-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+.track-form-input-container {
+  /* width: 100%; */
+  /* margin-bottom: 20px; */
+}
+.track-form-input {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 6px;
+  background: #FFFFFF;
+  border: 1px solid transparent;
+  padding: 7% 13%;
+  font-size: 12px;
+  line-height: 19px;
+  color: #000000;
+}
+.track-submit-btn.disabled {
+  background: #aaa;
+  cursor: default;
+  pointer-events: none;
+}
+
+/* _________________________footer______________________ */
+.tracking-footer{
+  background: #F8F8F8;
+    font-weight: 400;
+}
+.footer-container {
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+.footer-links {
+  padding: 2% 3%;
+  color: black;
+}
+.wareiq-logo {
+   width: 33%;
+}
+.wareiq-branding{
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+.wareiq-branding p{
+padding: 0% 3%;
+}
+
+
+
+
+
+
+
+
+
