@@ -1,0 +1,29 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+.react-slick * {
+  min-height: 0;
+  min-width: 0;
+}
+
+.react-slick .slick-prev, .react-slick .slick-next {
+  background-color: rgb(158, 156, 156);
+  border-radius: 10px;
+}
+.react-slick{
+  margin-top: 0px;
+}
+
+@media (min-width: 480px) {
+  .react-slick .fluid__image-container{
+    margin: 30px;
+  }
+
+  .react-slick .fluid__instructions {
+    margin: 0 20px;
+    padding-top: 20px;
+  }
+}
+  .react-slick{
+    margin: 0 20px;
+    padding-top: 0px;
+  }

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from "axios"
+import Zoom from './React-Slick'
 export default function BuyNow() {
 const [apidata,setApidata] =useState()
   const getapi = () => {
@@ -13,10 +14,15 @@ const [apidata,setApidata] =useState()
 useEffect(()=>{
    getapi()
 },[])
-function funzoom(){
-  alert("In Zoom ")
-}
 
+
+const[selectedImg,setSelectedImg]=useState(  <Zoom {...{
+  rimProps: {
+      isHintEnabled: true,
+      shouldHideHintAfterFirstActivation: false,
+      enlargedImagePosition: 'over'
+  }
+}} />)
   return (
     <>
 <div style={{display:"flex", fontSize:"12px"}}>
@@ -25,13 +31,40 @@ function funzoom(){
 <div className="container">
   <div className="row">
     <div className="col-lg-8 col-md-6 col-sm-12 col-12 shoe-side"> 
-    <div style={{width:"100%"}}>
+    <div className="fluid react-slick">
+                <div className="fluid__image-container">
+                {selectedImg}
+                <img src= {selectedImg} alt="" srcset="" />
+                </div>
+                {/* <div style={{height:'100px',width:"100%"}} /> */}
+            </div>
+    {/* <div style={{width:"100%"}}>
  <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel" >
-  <div className="carousel-inner" style={{width:"100%",height:"auto"}} onMouseEnter={()=>funzoom()}>
-    <div className="carousel-item active">
+  <div className="carousel-inner" style={{width:"100%",height:"auto"}}>
+   <div className="carousel-item active w-100">
+    <Zoom {...{
+                        rimProps: {
+                            isHintEnabled: true,
+                            shouldHideHintAfterFirstActivation: false,
+                            enlargedImagePosition: 'over'
+                        }
+                    }} />
       <img src={apidata?.products[2]?.images[0]} className="d-block w-100" alt="..."/>
     </div>
     <div className="carousel-item">
+
+    <div className="fluid react-slick">
+                <div className="fluid__image-container">
+                    <Zoom {...{
+                        rimProps: {
+                            isHintEnabled: true,
+                            shouldHideHintAfterFirstActivation: false,
+                            enlargedImagePosition: 'over'
+                        }
+                    }} />
+                </div>
+                <div style={{height:'100px',width:"100%"}} />
+            </div>
       <img src={apidata?.products[2]?.images[1]} className="d-block w-100" alt="..."/>
     </div>
     <div className="carousel-item">
@@ -59,9 +92,14 @@ function funzoom(){
     <span className="visually-hidden">Next</span>
   </button>
 </div>
-     </div>
+     </div> */}
       <div className='slides'> 
-      <button>2 </button>
+{apidata?.products[2].images.map((img)=>{
+  return  <img src={img} alt="" srcset="" onClick={()=>{setSelectedImg(img)}} width={200} height={150} 
+    style={img===selectedImg ? {border:"2px solid black"} : {}}
+  />
+})}
+      {/* <button>2 </button>
   <div style={{height:"125px",width:"20%"}}> <img src= {apidata?.products[2]?.images[0]} alt=""style={{height:"125px"}}/></div>
   <div style={{height:"125px",width:"20%"}}><img src= {apidata?.products[2]?.images[1]} alt="" style={{height:"125px"}}/></div>
   <div style={{height:"125px",width:"20%"}}><img src= {apidata?.products[2]?.images[2]} alt="" style={{height:"125px"}}/></div>
@@ -69,7 +107,7 @@ function funzoom(){
   <div style={{height:"125px",width:"20%"}}><img src= {apidata?.products[2]?.images[4]} alt="" style={{height:"125px"}}/></div>
   <div style={{height:"125px",width:"20%"}}><img src= {apidata?.products[2]?.images[5]} alt="" style={{height:"125px"}}/></div>
   <div style={{height:"125px",width:"20%"}}><img src= {apidata?.products[2]?.images[6]} alt="" style={{height:"125px"}}/></div>
-      <button>1</button>
+      <button>1</button> */}
        </div>
       <br />
       

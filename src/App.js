@@ -6,6 +6,9 @@ import {BrowserRouter,Routes,Route} from "react-router-dom"
 import Signup from './Signup'
 import BuyNow from './buyNow'
 import "./buyNowcss/style.css"
+import ImageSlider from './ImageSlider'
+//import Zoom from './React-Slick'
+// import ReactSlickExample from './React-SlickZoom'
 
 function App() {
   return (
@@ -19,7 +22,9 @@ function App() {
       </BrowserRouter> */}
 
   <BuyNow/>
-  
+
+  <ImageSlider/>
+ {/* <ReactSlickExample/> */}
     </div>
   )
 }
