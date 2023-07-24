@@ -1,18 +1,17 @@
 import React, { useEffect, useState } from 'react'
 import axios from "axios"
-import Zoom from './React-Slick'
-import { NavLink} from 'react-router-dom'
-export default function BuyNow() {
+import {NavLink } from 'react-router-dom'
+import LuftSlick from './Luft-Slick'
+import "./styles/react-slick.css"
+export default function Luft() {
 
 const [apidata,setApidata] =useState()
   const getapi = () => {
     axios.get("./db.json").then((res) => {
      let allData = res.data;
      setApidata(allData)
-     
     })
   }
-  console.log('all data',apidata);
 useEffect(()=>{
    getapi()
 },[])
@@ -20,41 +19,46 @@ useEffect(()=>{
   return (
     <>
 <div style={{display:"flex", fontSize:"12px"}}>
-    <p>Home ></p> <p>All ></p> <p style={{opacity:"0.5"}}>Ellipsis - Breathable Sneakers | Burgundy</p>
+    <p>Home ></p> <p>All ></p> <p style={{opacity:"0.5"}}>{apidata?.products[0]?.name}</p>
 </div>
 <div className="container">
   <div className="row">
     <div className="col-lg-8 col-md-6 col-sm-12 col-12 shoe-side"> 
     <div className="fluid react-slick">
                 <div className="fluid__image-container">
-                <Zoom {...{
+                <LuftSlick {...{
   rimProps: {
       isHintEnabled: true,
       shouldHideHintAfterFirstActivation: false,
       enlargedImagePosition: 'over'
   }
-}} />
+}}/>
                 </div>
             </div>
       <div className='slides'> 
-{apidata?.products[2].images.map((img)=>{
+
+<button>pre</button>
+
+{apidata?.products[0].images.map((img)=>{
   return  <img src={img} alt="" srcset="" width={200} height={150} />
-})}
+}).filter((_,ind)=> ind >0 && ind <=3)}
+<button>next</button>
        </div>
       <br />
        </div>
     <div className="col-lg-4 col-md-6 col-sm-12 col-12">
-        <h3>ELLIPSIS - BREATHABLE SNEAKERS | BURGUNDY</h3>
-        <p style={{fontSize:"18px"}}> <span style={{color:"red"}}> {apidata?.products[2]?.final_price}</span> <del style={{opacity:"0.5"}}> {apidata?.products[2]?.original_price}</del></p>
+        <h3>{apidata?.products[0]?.name}</h3>
+        <p style={{fontSize:"18px"}}> <span style={{color:"red"}}> RS. {apidata?.products[0]?.final_price}</span> </p>
         <p style={{fontSize:"10px"}}>Inclusive of all taxes</p>
         <p style={{fontSize:"12px"}}> <b>Not Out Edition</b></p>
         <div className='three-shoes'>
-         <div className='first '>
-         <NavLink to="/"> <img src={apidata?.products[2]?.images[0]} alt=""/> </NavLink>
+       
+            <div className='first'>
+            <NavLink to="/">   <img src={apidata?.products[2]?.images[0]} alt=""  /> </NavLink>
             <p className='pic'>Burgundy</p>
             </div>
-        <div className='first '>
-            <NavLink to="/cobalt"> <img src={apidata?.products[1]?.images[0]} alt="" /></NavLink>
+            <div className='first'> <NavLink to="/cobalt"> 
+                <img src={apidata?.products[1]?.images[0]} alt=""/></NavLink>
                 <p className='pic'>Cobalt</p>
             </div>
             <div className='first'><NavLink to="/luft">
@@ -72,13 +76,13 @@ useEffect(()=>{
             <button>12</button>
         </div>
         <br />
-        <div className='btn1'> <button>  <span style={{fontSize:"12px"}}> <b>ADD TO CART</b> </span>   </button> </div>
+        <div className='btn1'> <button className='disabled'>  <span style={{fontSize:"12px"}}> <b>SOLD OUT</b> </span>   </button> </div>
         <div className='btn2'> <button>  <span> Out of stock? Click here </span>   </button> </div>
         <p style={{textAlign:"center"}}>Powered by  <a href="">Notify Me!</a>  </p>
         <p>Starts shipping on 18th April</p>
-         <h4 style={{textAlign:"center", color:"green"}}>41 shoes left</h4> 
+         <h4 style={{textAlign:"center", color:"green"}}>39 shoes left</h4> 
          <div >
-         <input type="range" min="1" max="100" value="41" className="slider"/>  </div>
+         <input type="range" min="1" max="100" value="39" className="slider"/>  </div>
          
     </div>
     <div className='col-lg-12 col-md-12 col-sm-6 col-12'>
@@ -137,3 +141,4 @@ useEffect(()=>{
     </>
   )
 }
+

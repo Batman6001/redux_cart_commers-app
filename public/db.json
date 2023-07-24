@@ -2,43 +2,47 @@
     "products" : [
         {   
             "id" : 1,
-            "name" : "BANANA KICKS",
-            "color" : "ALL-BLACK",
-            "gender" : "WOMEN",
-            "original_price" : "4,999",
-            "final_price" : "3,999",
+            "name" : "LUFT - ULTRALIGHT SNEAKERS | FERN GREEN",
+            "color" : "ALL-GREEN",
+            "gender" : "MEN",
+            "final_price" : "2,999",
             "images" : [
-                "https://cdn.shopify.com/s/files/1/0258/2485/4100/products/1000x1000_0005_FH1-124_224x224_crop_center.jpg?v=1645650744",
-                "https://cdn.shopify.com/s/files/1/0258/2485/4100/products/1000x1000_0006_FH1-123_224x224_crop_center.jpg?v=1645650741",
-                "https://cdn.shopify.com/s/files/1/0258/2485/4100/products/1000x1000_0008_FH1-117copy_224x224_crop_center.jpg?v=1645650744",
-                "https://cdn.shopify.com/s/files/1/0258/2485/4100/products/1000x1000_0010_FH1-356_224x224_crop_center.jpg?v=1645650744"
-            ],
-            "sizes" : [3,4,5,6,7,8],
+                "https://www.flatheads.in/cdn/shop/products/Fern8_1000x1000_crop_center.jpg?v=1636736017",
+                "https://www.flatheads.in/cdn/shop/products/Fern9_1000x1000_crop_center.jpg?v=1636736017",
+                "https://www.flatheads.in/cdn/shop/products/Fern1_1000x1000_crop_center.jpg?v=1636736018",
+                "https://www.flatheads.in/cdn/shop/products/Fern2_1000x1000_crop_center.jpg?v=1636736019",
+                "https://www.flatheads.in/cdn/shop/products/Fern10_1000x1000_crop_center.jpg?v=1637613658",
+                "https://www.flatheads.in/cdn/shop/products/Fern3_1000x1000_crop_center.jpg?v=1637613658",
+                "https://www.flatheads.in/cdn/shop/products/Fern5_1000x1000_crop_center.jpg?v=1637613658",
+                "https://www.flatheads.in/cdn/shop/products/Fern6_1000x1000_crop_center.jpg?v=1637613658",
+                "https://flatheads.in/cdn/shop/products/Fern7_1000x1000_crop_center.jpg?v=1637613658"
+                        ],
+            "sizes" : [9,10,11,12],
             "reviews" : 0,
             "rating" : 0
         },
         {   
             "id" : 2,
-            "name" : "BANANA KICKS",
+            "name" : "COBALT",
             "color" : "AQUA BLUE",
             "gender" : "WOMEN",
             "original_price" : "3,999",
             "final_price" : "2,999",
             "images" : [
-                "https://www.flatheads.in/cdn/shop/products/Cobalt5_1000x1000.jpg?v=1644230005",
-                "https://cdn.shopify.com/s/files/1/0258/2485/4100/products/1000x1000_0006s_0003_FH1-164_224x224_crop_center.jpg?v=1645653336",
-                "https://cdn.shopify.com/s/files/1/0258/2485/4100/products/1000x1000_0006s_0000_FH1-170_224x224_crop_center.jpg?v=1645653336",
-                "https://cdn.shopify.com/s/files/1/0258/2485/4100/products/1000x1000_0006s_0001_FH1-166_224x224_crop_center.jpg?v=1645653336",
-                "https://cdn.shopify.com/s/files/1/0258/2485/4100/products/1000x1000_0006s_0002_FH1-165_224x224_crop_center.jpg?v=1645653336",
-                "https://cdn.shopify.com/s/files/1/0258/2485/4100/products/1000x1000_0006s_0004_FH1-163_224x224_crop_center.jpg?v=1645650808"
+                "https://www.flatheads.in/cdn/shop/products/Cobalt5_1000x1000_crop_center.jpg?v=1644230005",
+                "https://www.flatheads.in/cdn/shop/products/Cobalt7_1000x1000_crop_center.jpg?v=1644230005",
+                "https://www.flatheads.in/cdn/shop/products/Cobalt1_1000x1000_crop_center.jpg?v=1644230005",
+                "https://www.flatheads.in/cdn/shop/products/Cobalt2_1000x1000_crop_center.jpg?v=1644230005",
+                "https://www.flatheads.in/cdn/shop/products/Cobalt3_1000x1000_crop_center.jpg?v=1644230005",
+                "https://www.flatheads.in/cdn/shop/products/Cobalt6_1000x1000_crop_center.jpg?v=1644230005"
             ],
-            "sizes" : [3,4,5,6,7,8],
+            "sizes" : [9,10,11,12],
             "reviews" : 1,
             "rating" : 5
         },
         {   
             "id" : 3,
-            "name" : "BANANA KICKS",
+            "name" : "BURGUNDY",
             "color" : "BURGUNDY RED",
             "gender" : "MEN",
             "original_price" : "3,999",
@@ -52,7 +56,7 @@
                 "https://www.flatheads.in/cdn/shop/products/Burgundy5_1000x1000_crop_center.jpg?v=1644229836",
                 "https://www.flatheads.in/cdn/shop/products/Burgundy6_1000x1000_crop_center.jpg?v=1644229836"
             ],
-            "sizes" : [3,4,5,6,7,8],
+            "sizes" : [9,10,11,12],
             "reviews" : 1,
             "rating" : 5
         },

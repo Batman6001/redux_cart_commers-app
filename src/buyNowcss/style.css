@@ -4,10 +4,14 @@
     align-items: center;
     justify-content: center;
     height: 130px;
-    overflow-x: scroll;
-    overflow-y: hidden;
+    /* overflow-x: scroll;
+    overflow-y: hidden; */
     /* border: 1px solid black; */
   }
+  .slides button{
+    height: 130px;
+    border: none;
+      }
   .linespace{
     line-height: 35px;
   }
@@ -18,8 +22,8 @@
   .first img{
     height: 80px;
     width: 80px;
-    border-radius: 50%;
-    border: 2px solid black;
+    /* border-radius: 50%;
+    border: 2px solid black; */
   }
   .pic{
     font-size: 12px;
@@ -61,11 +65,16 @@
     color: white;
     width: 100%;
   }
+  
   .preorder{
     background-color: rgb(255, 213, 0);
     border: none;
     padding: 8PX;
     position: sticky;
+  }
+  .first .active img {
+    border-radius: 50%;
+    border: 3px solid black;
   }
  
 
