@@ -1,17 +1,35 @@
 import React, { useState } from 'react'
+import Faq from '../Faq';
 
 const MainOrder = () => {
 
-    const [checked, setChecked] = useState(false);
-    // const [checkedTwo, setCheckedTwo] = useState(false);
+    const [number, setNumber] = useState('');
+    // const [orderId, setOrderId] = useState();
+    const [checked, setChecked] = useState(true);
+    const [checked1, setChecked1] = useState(false);
 
-    const handle_Check = () => {
-        setChecked(!checked);
+    const handle_Check_Order = () => {
+        if (!checked) {
+            setChecked(true);
+            setChecked1(false);
+        }
+    };
+    const handle_Check_Number = () => {
+        if (!checked1) {
+            setChecked1(true);
+            setChecked(false);
+        }
     };
 
-    // const handle_Checkbox = () => {
-    //     setCheckedTwo(!checkedTwo);
-    // };
+
+    const isInputEmpty = !number.trim();
+    const buttonColor = isInputEmpty ? '#aaa' : '#034D83';
+    const handle_track = (e) => {
+        setNumber(e.target.value)
+    }
+    const handle_click = () => {
+        alert("Page Not Found")
+    }
 
     return (
         <main className="tracking-main-content">
@@ -21,55 +39,42 @@ const MainOrder = () => {
                     <div className="search-by-label">Search by</div>
                     <div className="track-radio-btns-container">
                         <div className="track-radio-btn">
-                            {/* <input type="checkbox" checked={checked} onChange={handle_Check} defaultChecked /> */}
-                            <label htmlFor="orderId">Order ID</label>
+                            <input type="checkbox" checked={checked} onChange={handle_Check_Order} defaultChecked />
+                            <label htmlFor="orderId" className='main-lable-fix'>Order ID</label>
                         </div>
                         <div className="track-radio-btn">
-                            {/* <input type="checkbox" id="awbNumber" name="trackRadio" value="awbNumber" /> */}
-                            <label htmlFor="awbNumber">AWB Number</label>
+                            <input type="checkbox" checked={checked1} onChange={handle_Check_Number} />
+                            <label htmlFor="awbNumber" className='main-lable-fix'>AWB Number</label>
                         </div>
                     </div>
-
-
-                    {/* {checked && (
-                            <div className='tracking-page-body-input'>
-                                <label>Label:</label>
-                                <input type="text" placeholder="Enter order id" />
-                                <label>Label:</label>
-                                <input type="text" placeholder="Enter mobile number" />
-                            </div>
-                        )} */}
-                    {/* <button className='button-text'>Track</button> */}
-
-
-
                     <div class="track-form-container">
-                        <div class="track-form-input-container orderid-search-container order-id-search">
-                            <label>Order ID <span class="input-required">*</span></label>
-                            <input class="track-form-input" name="orderId" id="order_id_input" placeholder="Enter order id" />
-                        </div>
-                        <div class="track-form-input-container orderid-search-container">
-                            <label>Mobile Number <span class="input-required">*</span></label>
-                            <input class="track-form-input" type="number" name="mobile" id="mobile_number_input" placeholder="Enter mobile number" />
-                        </div>
-                        {/* <div class="track-form-input-container awb-search-container hide">
-                                <label>AWB Number <span class="input-required">*</span></label>
-                                <input class="track-form-input" name="awb" id="awb_number_input" placeholder="Enter AWB number" />
-                            </div> */}
-                        <div class="track-submit-container">
-                            <button class="track-submit-btn disabled" id="trackSubmitBtn">Track</button>
+                        {checked &&
+                            <>
+                                <div class="track-form-input-container ">
+                                    <label className='main-lable-fix1'>Order ID <span class="input-required">*</span></label>
+                                    <input class="track-form-input" placeholder="Enter order id" onChange={handle_track} />
+                                </div>
+                                <div class="track-form-input-container ">
+                                    <label className='main-lable-fix1'>Mobile Number <span class="input-required">*</span></label>
+                                    <input class="track-form-input" type="number" placeholder="Enter mobile number" />
+                                </div>
+                            </>
+                        }
+                        {checked1 &&
+                            <div class="track-form-input-container">
+                                <label className='main-lable-fix1'>AWB Number <span class="input-required">*</span></label>
+                                <input class="track-form-input1" placeholder="Enter AWB number" onChange={handle_track} />
+                            </div>
+                        }
+
+                        <div class="track-form-input-container">
+                            <button disabled={isInputEmpty}
+                                style={{ backgroundColor: buttonColor }} onClick={handle_click}>Track</button>
                         </div>
                     </div>
-                    <div class="tracking-error hide"></div>
-                    <div class="multiple-awb-container hide"></div>
-                    {/* </div> */}
-                    {/* </div> */}
-
-
                 </div>
             </div>
         </main>
-
     )
 }
 

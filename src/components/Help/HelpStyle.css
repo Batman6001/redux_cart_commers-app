@@ -1,8 +1,8 @@
 /* ___________________FAQ___________________ */
 
+
 .content-cenrer {
     text-align: center;
-    /* padding-bottom: 0%; */
     margin-top: 8%;
     font-size: 80%;    
 }
@@ -27,8 +27,6 @@ label {
     font-weight: 800;
   display: block;
   opacity: 0.7;
-  /* background-color: #f0f0f0; */
-  /* padding: 10px; */
   cursor: pointer;
 }
 
@@ -58,7 +56,9 @@ input[type="radio"]:checked + label + article {
 .tracking-header {
   width: 100%;
   height: auto;
-  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* position: absolute; */
+  /* box-shadow: 20px; */
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 /* -----------------------------------Main------------------- */
 
@@ -68,8 +68,8 @@ input[type="radio"]:checked + label + article {
 }
 
  .tracking-container {
-  margin: 0% 12%;
-  border: 1px solid black;
+  margin: 0% 13%;
+  /* border: 1px solid black; */
 }
 .page-title{
   margin-top: 0%;
@@ -77,54 +77,100 @@ input[type="radio"]:checked + label + article {
   margin-bottom: 5%;
 }
 .order-search-container{
-  border: 1px solid black;
+  margin: 1% 1%;
   padding: 4% 5%;
    background: #F8F8F8;
   border-radius: 12px;
 }
-/* .search-by-label{
+.search-by-label{
   font-size: 14px;
   color: #000000;
   line-height: 16px;
-} */
+}
 .track-radio-btns-container {
   display: flex;
 }
 .track-radio-btn{
   margin: 15px 30px 25px 0;
-  /* font-size: 52%; */
   line-height: 14px;
   color: #000000;
   display: flex;
   align-items: center;
   cursor: pointer;
 }
-/* .track-radio-btn input[type=radio] {
-  height: 18%;
-  width: 18px;
-  margin-right: 10px;
-  cursor: pointer;
-} */
+ 
 .track-form-container {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
+  justify-content:space-between;
 }
-.track-form-input-container {
-  /* width: 100%; */
-  /* margin-bottom: 20px; */
+
+  .main-lable-fix{
+  font-size: 18px;
+    font-weight: 400;
+  display:block;
+  opacity: 1;
+  cursor: pointer;
 }
+.main-lable-fix1{
+  font-size: 13px;
+  font-weight: 400;
+  display:block;
+  opacity: 1;
+  cursor: pointer;
+  margin-bottom: 7%;
+}
+.track-form-input-container button{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 6px;
+  /* position: fixed; */
+}
+
+.input-required {
+  color: red;
+}
+
 .track-form-input {
   display: block;
-  width: 100%;
-  max-width: 100%;
+  width: 185%;
+  /* max-width: 100%; */
   border-radius: 6px;
   background: #FFFFFF;
   border: 1px solid transparent;
-  padding: 7% 13%;
+  padding: 10% 15%;
   font-size: 12px;
   line-height: 19px;
   color: #000000;
+}
+.track-form-input1 {
+  display: block;
+  width: 430%;
+  /* max-width: 100%; */
+  border-radius: 6px;
+  background: #FFFFFF;
+  border: 1px solid transparent;
+  padding: 10% 15%;
+  font-size: 12px;
+  line-height: 19px;
+  color: #000000;
+}
+@media only screen and ( max-width: 700px) {
+  .track-form-input {
+  /* width: 100%; */
+  width: 100%;
+  }
+.track-form-input1 {
+  /* width: 100%; */
+  width: 100%;
+}
 }
 .track-submit-btn.disabled {
   background: #aaa;
@@ -132,10 +178,19 @@ input[type="radio"]:checked + label + article {
   pointer-events: none;
 }
 
+/* .track-submit-container {
+ height: 100%;
+
+}
+.track-submit-btn {
+  height: 100%;
+} */
+
 /* _________________________footer______________________ */
 .tracking-footer{
   background: #F8F8F8;
     font-weight: 400;
+    /* margin-top: 1.4%; */
 }
 .footer-container {
   display: flex;
@@ -158,9 +213,6 @@ input[type="radio"]:checked + label + article {
 .wareiq-branding p{
 padding: 0% 3%;
 }
-
-
-
 
 
 
