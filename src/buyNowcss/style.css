@@ -4,14 +4,28 @@
     align-items: center;
     justify-content: center;
     height: 130px;
-    /* overflow-x: scroll;
+    /* overflow: scroll;
+    position: relative;
+    overflow-x: hidden;
     overflow-y: hidden; */
     /* border: 1px solid black; */
   }
   .slides button{
     height: 130px;
-    border: none;
-      }
+    /* border: none; */
+    /* background: none; */
+    background-color: red;
+    color: grey;
+   }
+.rightBtn {
+  position: absolute;
+  right: 0;
+}
+/* .prev{
+  position: absolute;
+  left: 0;
+} */
+
   .linespace{
     line-height: 35px;
   }

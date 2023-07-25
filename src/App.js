@@ -10,6 +10,7 @@ import ImageSlider from './ImageSlider'
 import Home from './Home'
 import Cobalt from './Cobalt'
 import Luft from './Luft'
+import SliderPage from './slider'
 //import Zoom from './React-Slick'
 // import ReactSlickExample from './React-SlickZoom'
 
@@ -38,6 +39,8 @@ function App() {
       </BrowserRouter>
 
   <ImageSlider/>
+  {/* <div style={{width:"50%"}}><SliderPage/></div> */}
+  
  {/* <ReactSlickExample/> */}
     </div>
   )

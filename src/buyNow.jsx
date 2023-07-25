@@ -37,15 +37,13 @@ useEffect(()=>{
                 </div>
             </div>
       <div className='slides'> 
-{apidata?.products[2].images.map((img)=>{
-  return  <img src={img} alt="" srcset="" width={200} height={150} />
-})}
+
        </div>
       <br />
        </div>
     <div className="col-lg-4 col-md-6 col-sm-12 col-12">
         <h3>ELLIPSIS - BREATHABLE SNEAKERS | BURGUNDY</h3>
-        <p style={{fontSize:"18px"}}> <span style={{color:"red"}}> {apidata?.products[2]?.final_price}</span> <del style={{opacity:"0.5"}}> {apidata?.products[2]?.original_price}</del></p>
+        <p style={{fontSize:"18px"}}> <span style={{color:"red"}}>Rs. {apidata?.products[2]?.final_price}</span> <del style={{opacity:"0.5"}}> {apidata?.products[2]?.original_price}</del></p>
         <p style={{fontSize:"10px"}}>Inclusive of all taxes</p>
         <p style={{fontSize:"12px"}}> <b>Not Out Edition</b></p>
         <div className='three-shoes'>
